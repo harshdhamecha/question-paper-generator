@@ -1,0 +1,24 @@
+{
+    "Mid Exam": {
+        "question_types": {
+            "MCQ": true,
+            "Descriptive": true
+        },
+        "num_mcq": 5,
+        "num_3_marks": 6,
+        "num_5_marks": 5,
+        "total_marks": 50,
+        "selected_option": "Easy"
+    },
+    "Final Exam": {
+        "question_types": {
+            "MCQ": true,
+            "Descriptive": true
+        },
+        "num_mcq": 10,
+        "num_3_marks": 12,
+        "num_5_marks": 10,
+        "total_marks": 100,
+        "selected_option": "Hard"
+    }
+}

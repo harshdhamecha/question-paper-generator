@@ -1,0 +1,11 @@
+steps:
+  # Docker Build & Push
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args: ['builds', 'submit', 
+           '--tag', '"asia-south1-docker.pkg.dev/team-synthify/synthify/synthify-paper-app"'
+          ]
+
+
+
+  
