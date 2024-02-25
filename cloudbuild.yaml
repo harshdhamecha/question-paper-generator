@@ -2,11 +2,11 @@ steps:
   # Docker Build & Push
   - name: 'gcr.io/cloud-builders/gcloud'
     script: |
-      gcloud builds submit --tag "asia-south1-docker.pkg.dev/team-synthify/synthify/synthify-paper-app:$COMMIT_SHA"
+      gcloud builds submit --tag '"asia-south1-docker.pkg.dev/team-synthify/synthify/synthify-paper-app:$COMMIT_SHA"'
 
-  - name: 'gcr.io/cloud-builders/gcloud'
-    script: |
-      gcloud run deploy synthify-paper-app --image "asia-south1-docker.pkg.dev/team-synthify/synthify/synthify-paper-app:$COMMIT_SHA" --region asia-south1 --set-env-vars=GCP_PROJECT=team-synthify,GCP_REGION=asia-south1
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   script: |
+  #     gcloud run deploy synthify-paper-app --image "asia-south1-docker.pkg.dev/team-synthify/synthify/synthify-paper-app:$COMMIT_SHA" --region asia-south1 --set-env-vars=GCP_PROJECT=team-synthify,GCP_REGION=asia-south1
    
 
   
