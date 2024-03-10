@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 
-st.set_page_config(page_title="Synthesify")
+st.set_page_config(page_title="Synthify")
 
 from model import get_output
 
@@ -39,6 +39,7 @@ def generate_prompt(num_mcq, num_3_marks, num_5_marks, difficulty_level, subject
 
 
 def main():
+
     st.title("Question Paper Generator")
 
     # Load templates
@@ -54,8 +55,7 @@ def main():
     subject = st.selectbox('Subjects', list(subjects.keys()))
 
     if selected_template == "Custom":
-        # Sidebar options for custom template
-        st.header("Question Type")  # Making the title smaller
+        st.header("Question Type")
 
         option = st.selectbox('Option', ['Full-syllabus', 'Topic-wise'])
         if option == 'Topic-wise':
